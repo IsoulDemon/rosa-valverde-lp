@@ -14,8 +14,8 @@
 
 <!-- ===================== META PIXEL =====================
      Pixel da Rosa Valverde — ID 1851300455844156.
-     PageView dispara ao abrir a página; CompleteRegistration
-     (Concluir inscrição) dispara no clique do botão (ver <script> no fim).
+     PageView dispara ao abrir a página. Os eventos de clique são
+     configurados pela Ferramenta de Eventos do Meta (não por código).
      ===================================================== -->
 <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -225,13 +225,8 @@
     <span class="cp">© 2026 Rosa Valverde · Todos os direitos reservados</span>
   </footer>
 
-  <script>
-    // No clique do botão dispara "Concluir inscrição" (CompleteRegistration)
-    // pro Meta Pixel e segue pro grupo do WhatsApp.
-    document.getElementById('entrar').addEventListener('click', function(){
-      try { if (window.fbq) fbq('track', 'CompleteRegistration'); } catch(e){}
-    });
-  </script>
+  <!-- Eventos de clique (ex.: CompleteRegistration) são configurados
+       pela Ferramenta de Eventos do Meta, não por código. -->
 
 </body>
 </html>
